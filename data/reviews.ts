@@ -39,7 +39,7 @@ export const reviews: Review[] = [
     category: 'Sleep Accessories',
     rating: 4.7,
     excerpt: 'Lumie\'s bestselling wake-up light does the one thing that matters — a gradual, genuinely effective sunrise simulation — at a price most people can actually justify. After 30 nights of testing, it\'s earned its place on the bedside table.',
-    image: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&q=80',
+    image: '/images/lumie-glow-150.jpg',
     author: 'James Alderton',
     publishedAt: '2026-04-19',
     readTime: 7,

@@ -61,7 +61,7 @@ export const products: Product[] = [
     price: 79,
     rating: 4.7,
     reviewCount: 4821,
-    image: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=600&q=80',
+    image: '/images/lumie-glow-150.jpg',
     badge: 'editors-pick',
     affiliateLink: { url: 'https://amzn.to/4evAcsj', network: 'amazon', retailer: 'Amazon' },
     slug: 'lumie-bodyclock-glow-150-review',

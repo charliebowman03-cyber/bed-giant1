@@ -32,7 +32,7 @@ export const deals: Deal[] = [
     originalPrice: 99,
     dealPrice: 79,
     discountPercent: 20,
-    image: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=600&q=80',
+    image: '/images/lumie-glow-150.jpg',
     affiliateLink: { url: 'https://amzn.to/4evAcsj', network: 'amazon', retailer: 'Amazon' },
     slug: 'lumie-glow-150-deal',
   },
