@@ -15,10 +15,10 @@ export const metadata: Metadata = {
 
 const team = [
   {
-    name: 'Charlotte Webb',
+    name: 'Daniel Stevens',
     role: 'Lead Reviewer — Mattresses & Bedding',
-    bio: 'Charlotte has tested over 80 mattresses in the last four years. She sleeps on her side, runs warm, and has strong opinions about thread counts. Previously a product buyer for a major UK department store.',
-    initials: 'CW',
+    bio: 'Daniel has tested over 80 mattresses in the last four years. He sleeps on his side, runs warm, and has strong opinions about thread counts. Previously a product buyer for a major UK department store.',
+    initials: 'DS',
   },
   {
     name: 'James Alderton',
