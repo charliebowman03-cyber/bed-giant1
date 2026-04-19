@@ -58,7 +58,7 @@ export const products: Product[] = [
     name: 'Lumie Bodyclock Glow 150',
     brand: 'Lumie',
     category: 'Sleep Accessories',
-    price: 79,
+    price: 118.96,
     rating: 4.7,
     reviewCount: 4821,
     image: '/images/lumie-glow-150.jpg',

@@ -44,7 +44,7 @@ export const reviews: Review[] = [
     publishedAt: '2026-04-19',
     readTime: 7,
     slug: 'lumie-bodyclock-glow-150-review',
-    priceFrom: 79,
+    priceFrom: 118.96,
     affiliateLink: { url: 'https://amzn.to/4evAcsj', network: 'amazon', retailer: 'Amazon' },
     pros: [
       '30-minute sunrise simulation that genuinely makes waking up easier',
