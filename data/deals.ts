@@ -26,17 +26,6 @@ export const deals: Deal[] = [
     slug: 'white-company-hungarian-duvet-deal',
   },
   {
-    id: 'deal-3',
-    productName: 'Lumie Bodyclock Glow 150',
-    brand: 'Lumie',
-    originalPrice: 99,
-    dealPrice: 79,
-    discountPercent: 20,
-    image: '/images/lumie-glow-150.jpg',
-    affiliateLink: { url: 'https://amzn.to/4evAcsj', network: 'amazon', retailer: 'Amazon' },
-    slug: 'lumie-glow-150-deal',
-  },
-  {
     id: 'deal-4',
     productName: 'Berkeley Ottoman Bed — Natural',
     brand: 'Dusk',
