@@ -12,11 +12,11 @@ import Newsletter from '@/components/homepage/Newsletter';
 export const metadata: Metadata = {
   title: 'BedGiant — Expert Sleep & Bedroom Reviews',
   description: 'Expert-tested beds, mattresses, bedding and sleep accessories. Independent reviews, curated best picks and verified deals — all in one place.',
-  alternates: { canonical: 'https://bedgiant.co.uk' },
+  alternates: { canonical: 'https://bedgiant.com' },
   openGraph: {
     title: 'BedGiant — Expert Sleep & Bedroom Reviews',
     description: 'Expert-tested beds, mattresses, bedding and sleep accessories. Independent reviews, curated best picks and verified deals.',
-    url: 'https://bedgiant.co.uk',
+    url: 'https://bedgiant.com',
     type: 'website',
   },
 };

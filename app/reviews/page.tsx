@@ -5,11 +5,11 @@ import ReviewsGrid from '@/components/reviews/ReviewsGrid';
 export const metadata: Metadata = {
   title: 'Expert Sleep Product Reviews — Mattresses, Beds & More',
   description: 'In-depth, independent reviews of mattresses, beds, bedding, pillows and sleep accessories. Tested for a minimum of 30 nights. Written honestly.',
-  alternates: { canonical: 'https://bedgiant.co.uk/reviews' },
+  alternates: { canonical: 'https://bedgiant.com/reviews' },
   openGraph: {
     title: 'Expert Sleep Product Reviews | BedGiant',
     description: 'Mattresses, beds, bedding and sleep accessories reviewed by our expert team. Minimum 30 nights testing. No paid placements.',
-    url: 'https://bedgiant.co.uk/reviews',
+    url: 'https://bedgiant.com/reviews',
     type: 'website',
   },
 };

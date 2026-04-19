@@ -5,11 +5,11 @@ import DealCard from '@/components/ui/DealCard';
 export const metadata: Metadata = {
   title: 'Best Mattress & Bed Deals — Verified Sales & Discounts',
   description: 'The best current deals on mattresses, beds, bedding and sleep accessories. Every discount verified — no fake "was" prices.',
-  alternates: { canonical: 'https://bedgiant.co.uk/deals' },
+  alternates: { canonical: 'https://bedgiant.com/deals' },
   openGraph: {
     title: 'Best Mattress & Bed Deals | BedGiant',
     description: 'Verified deals on mattresses, beds and bedding. No manufactured urgency, no fake discounts.',
-    url: 'https://bedgiant.co.uk/deals',
+    url: 'https://bedgiant.com/deals',
     type: 'website',
   },
 };

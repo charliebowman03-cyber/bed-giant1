@@ -7,11 +7,11 @@ import GuideCard from '@/components/ui/GuideCard';
 export const metadata: Metadata = {
   title: 'Mattress & Bed Buying Guides — Expert Advice',
   description: 'Straight-talking buying guides for mattresses, beds, bedding, pillows and sleep accessories. No jargon. Just what you need to know before you buy.',
-  alternates: { canonical: 'https://bedgiant.co.uk/blog' },
+  alternates: { canonical: 'https://bedgiant.com/blog' },
   openGraph: {
     title: 'Mattress & Bed Buying Guides | BedGiant',
     description: 'Expert buying guides for every sleep product category. Cut through the noise and spend your money wisely.',
-    url: 'https://bedgiant.co.uk/blog',
+    url: 'https://bedgiant.com/blog',
     type: 'website',
   },
 };

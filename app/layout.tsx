@@ -21,7 +21,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bedgiant.co.uk'),
+  metadataBase: new URL('https://bedgiant.com'),
   title: {
     default: 'BedGiant — Expert Sleep & Bedroom Reviews',
     template: '%s | BedGiant',
@@ -64,21 +64,21 @@ export default function RootLayout({
           '@graph': [
             {
               '@type': 'WebSite',
-              '@id': 'https://bedgiant.co.uk/#website',
-              url: 'https://bedgiant.co.uk',
+              '@id': 'https://bedgiant.com/#website',
+              url: 'https://bedgiant.com',
               name: 'BedGiant',
               description: 'Expert-tested reviews and curated picks for beds, mattresses, bedding and sleep accessories.',
               potentialAction: {
                 '@type': 'SearchAction',
-                target: { '@type': 'EntryPoint', urlTemplate: 'https://bedgiant.co.uk/reviews?q={search_term_string}' },
+                target: { '@type': 'EntryPoint', urlTemplate: 'https://bedgiant.com/reviews?q={search_term_string}' },
                 'query-input': 'required name=search_term_string',
               },
             },
             {
               '@type': 'Organization',
-              '@id': 'https://bedgiant.co.uk/#organization',
+              '@id': 'https://bedgiant.com/#organization',
               name: 'BedGiant',
-              url: 'https://bedgiant.co.uk',
+              url: 'https://bedgiant.com',
               description: 'Independent reviews and expert picks for sleep and bedroom products.',
               sameAs: [],
             },

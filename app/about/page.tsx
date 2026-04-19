@@ -4,11 +4,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About BedGiant — How We Test & How We Work',
   description: 'Who we are, how we test sleep products, and how we make money. Full transparency on our editorial process and affiliate relationships.',
-  alternates: { canonical: 'https://bedgiant.co.uk/about' },
+  alternates: { canonical: 'https://bedgiant.com/about' },
   openGraph: {
     title: 'About BedGiant — How We Test & How We Work',
     description: 'Full transparency on our editorial process, testing methodology and affiliate relationships.',
-    url: 'https://bedgiant.co.uk/about',
+    url: 'https://bedgiant.com/about',
     type: 'website',
   },
 };

@@ -5,11 +5,11 @@ import BestPicksGrid from '@/components/best-picks/BestPicksGrid';
 export const metadata: Metadata = {
   title: 'Best Sleep Products 2026 — Editor-Curated Picks',
   description: 'Our editor-curated best picks across mattresses, beds, bedding, pillows and sleep accessories. Every product independently tested and approved.',
-  alternates: { canonical: 'https://bedgiant.co.uk/best-picks' },
+  alternates: { canonical: 'https://bedgiant.com/best-picks' },
   openGraph: {
     title: 'Best Sleep Products 2026 | BedGiant',
     description: 'Editor-curated picks across mattresses, beds, bedding and sleep accessories. Independently tested, no paid placements.',
-    url: 'https://bedgiant.co.uk/best-picks',
+    url: 'https://bedgiant.com/best-picks',
     type: 'website',
   },
 };

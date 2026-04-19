@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-export const SITE_URL = 'https://bedgiant.co.uk'; // swap when domain is live
+export const SITE_URL = 'https://bedgiant.com'; // swap when domain is live
 export const SITE_NAME = 'BedGiant';
 export const SITE_DESCRIPTION =
   'Expert-tested reviews and curated picks for beds, mattresses, bedding and sleep accessories. Independent, honest, updated regularly.';
