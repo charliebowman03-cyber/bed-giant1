@@ -42,7 +42,7 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 lg:h-[4.5rem]">
 
             {/* Logo */}
-            <Logo />
+            <Logo variant={scrolled ? 'dark' : 'light'} />
 
             {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
@@ -50,7 +50,11 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-medium text-[#3D2E25] hover:text-[#2A2118] transition-colors duration-200 cursor-pointer tracking-wide"
+                  className={`text-sm font-medium transition-all duration-200 cursor-pointer tracking-wide px-3 py-1.5 rounded-full ${
+                    scrolled
+                      ? 'text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]'
+                      : 'text-white/90 hover:text-white hover:bg-white/15'
+                  }`}
                 >
                   {link.label}
                 </Link>
@@ -62,7 +66,11 @@ export default function Header() {
               <button
                 aria-label="Search"
                 onClick={() => window.dispatchEvent(new CustomEvent('open-search'))}
-                className="p-2.5 text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]/60 rounded-full transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6E5A] focus-visible:ring-offset-1"
+                className={`p-2.5 rounded-full transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6E5A] focus-visible:ring-offset-1 ${
+                  scrolled
+                    ? 'text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]/60'
+                    : 'text-white/90 hover:text-white hover:bg-white/10'
+                }`}
               >
                 <Search size={18} strokeWidth={1.5} />
               </button>
@@ -70,7 +78,11 @@ export default function Header() {
                 onClick={() => setMobileOpen(!mobileOpen)}
                 aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={mobileOpen}
-                className="lg:hidden p-2.5 text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]/60 rounded-full transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6E5A] focus-visible:ring-offset-1"
+                className={`lg:hidden p-2.5 rounded-full transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6E5A] focus-visible:ring-offset-1 ${
+                  scrolled
+                    ? 'text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]/60'
+                    : 'text-white/90 hover:text-white hover:bg-white/10'
+                }`}
               >
                 {mobileOpen ? <X size={18} strokeWidth={1.5} /> : <Menu size={18} strokeWidth={1.5} />}
               </button>

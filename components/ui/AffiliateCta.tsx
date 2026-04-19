@@ -23,8 +23,8 @@ export default function AffiliateCta({
   const base = 'inline-flex items-center gap-2 font-medium rounded-full transition-all duration-200 cursor-pointer';
 
   const variants = {
-    primary: 'bg-[#8B6E5A] hover:bg-[#7A5E4A] text-white',
-    outline: 'border border-[#2A2118] text-[#2A2118] hover:bg-[#2A2118] hover:text-white',
+    primary: 'bg-[#8B6E5A] hover:bg-[#7A5E4A] text-white btn-shimmer',
+    outline: 'border border-[#2A2118] text-[#2A2118] hover:bg-[#2A2118] hover:text-white btn-shimmer',
     ghost: 'text-[#8B6E5A] hover:text-[#7A5E4A] underline-offset-4 hover:underline',
   };
 
@@ -41,8 +41,8 @@ export default function AffiliateCta({
       className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
       aria-label={`${displayLabel} (opens in new tab)`}
     >
-      <span>{displayLabel}</span>
-      <ExternalLink size={13} strokeWidth={2} aria-hidden="true" />
+      <span className="relative z-10">{displayLabel}</span>
+      <ExternalLink size={13} strokeWidth={2} aria-hidden="true" className="relative z-10 transition-transform duration-200 group-hover:translate-x-0.5" />
     </a>
   );
 }

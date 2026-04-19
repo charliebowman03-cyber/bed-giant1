@@ -33,3 +33,26 @@ body {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+@keyframes shimmer {
+  from { transform: translateX(-150%); }
+  to   { transform: translateX(150%); }
+}
+
+.btn-shimmer {
+  overflow: hidden;
+  position: relative;
+}
+
+.btn-shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.28) 50%, transparent 60%);
+  transform: translateX(-150%);
+  transition: none;
+}
+
+.btn-shimmer:hover::after {
+  animation: shimmer 0.55s ease-in-out forwards;
+}

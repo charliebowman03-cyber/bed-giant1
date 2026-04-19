@@ -23,9 +23,10 @@ export default function ReviewCard({ review, delay = 0 }: ReviewCardProps) {
     <motion.article
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ y: -6, transition: { duration: 0.25, ease: [0.22, 1, 0.36, 1] } }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
-      className="group flex flex-col bg-white rounded-2xl border border-[#EDE8E3] overflow-hidden hover:border-[#B08070]/40 hover:shadow-lg hover:shadow-black/5 transition-all duration-300"
+      className="group flex flex-col bg-white rounded-2xl border border-[#EDE8E3] overflow-hidden hover:border-[#B08070]/40 hover:shadow-xl hover:shadow-black/8 transition-[border-color,box-shadow] duration-300"
     >
       {/* Image */}
       <Link href={`/reviews/${review.slug}`} className="block relative overflow-hidden aspect-[4/3]">
@@ -67,9 +68,10 @@ export default function ReviewCard({ review, delay = 0 }: ReviewCardProps) {
           </div>
           <Link
             href={`/reviews/${review.slug}`}
-            className="text-xs font-medium text-[#8B6E5A] hover:text-[#7A5E4A] transition-colors duration-200 cursor-pointer"
+            className="group/arrow text-xs font-medium text-[#8B6E5A] hover:text-[#7A5E4A] transition-colors duration-200 cursor-pointer inline-flex items-center gap-1"
           >
-            Read →
+            Read
+            <span className="inline-block transition-transform duration-200 group-hover/arrow:translate-x-1">→</span>
           </Link>
         </div>
       </div>
