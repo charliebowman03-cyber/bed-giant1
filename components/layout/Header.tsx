@@ -35,14 +35,17 @@ export default function Header() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
           scrolled
             ? 'bg-[#FBF8F5]/96 backdrop-blur-md border-b border-[#EDE8E3]'
-            : 'bg-transparent border-b border-transparent'
+            : 'border-b border-transparent'
         }`}
+        style={!scrolled ? {
+          background: 'linear-gradient(to bottom, rgba(251,248,245,0.92) 0%, rgba(251,248,245,0.6) 60%, transparent 100%)',
+        } : undefined}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between h-16 lg:h-[4.5rem]">
 
-            {/* Logo */}
-            <Logo variant={scrolled ? 'dark' : 'light'} />
+            {/* Logo — always dark, readable on any background */}
+            <Logo variant="dark" />
 
             {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
@@ -50,11 +53,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-medium transition-all duration-200 cursor-pointer tracking-wide px-3 py-1.5 rounded-full ${
-                    scrolled
-                      ? 'text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]'
-                      : 'text-white/90 hover:text-white hover:bg-white/15'
-                  }`}
+                  className="text-sm font-medium transition-all duration-200 cursor-pointer tracking-wide px-3 py-1.5 rounded-full text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]"
                 >
                   {link.label}
                 </Link>
@@ -66,11 +65,7 @@ export default function Header() {
               <button
                 aria-label="Search"
                 onClick={() => window.dispatchEvent(new CustomEvent('open-search'))}
-                className={`p-2.5 rounded-full transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6E5A] focus-visible:ring-offset-1 ${
-                  scrolled
-                    ? 'text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]/60'
-                    : 'text-white/90 hover:text-white hover:bg-white/10'
-                }`}
+                className="p-2.5 rounded-full transition-all duration-200 cursor-pointer text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6E5A] focus-visible:ring-offset-1"
               >
                 <Search size={18} strokeWidth={1.5} />
               </button>
@@ -78,11 +73,7 @@ export default function Header() {
                 onClick={() => setMobileOpen(!mobileOpen)}
                 aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={mobileOpen}
-                className={`lg:hidden p-2.5 rounded-full transition-all duration-200 cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6E5A] focus-visible:ring-offset-1 ${
-                  scrolled
-                    ? 'text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]/60'
-                    : 'text-white/90 hover:text-white hover:bg-white/10'
-                }`}
+                className="lg:hidden p-2.5 rounded-full transition-all duration-200 cursor-pointer text-[#3D2E25] hover:text-[#2A2118] hover:bg-[#EDE8E3]/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8B6E5A] focus-visible:ring-offset-1"
               >
                 {mobileOpen ? <X size={18} strokeWidth={1.5} /> : <Menu size={18} strokeWidth={1.5} />}
               </button>

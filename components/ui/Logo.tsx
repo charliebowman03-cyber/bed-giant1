@@ -16,14 +16,14 @@ export default function Logo({ variant = 'dark', className = '' }: LogoProps) {
       className={`flex flex-col leading-none cursor-pointer group shrink-0 ${className}`}
     >
       <span
-        className="text-[10px] font-semibold uppercase tracking-[0.38em] transition-colors duration-200 pl-px"
+        className="text-[11px] font-bold uppercase tracking-[0.38em] transition-colors duration-300 pl-px"
         style={{ color: labelColor }}
       >
         Bed
       </span>
       <span
-        className="font-display font-semibold leading-none tracking-tight transition-colors duration-200"
-        style={{ fontSize: 'clamp(1.4rem, 2vw, 1.7rem)', color: wordColor }}
+        className="font-display font-bold leading-none tracking-tight transition-colors duration-300"
+        style={{ fontSize: 'clamp(1.7rem, 2.2vw, 2.1rem)', color: wordColor }}
       >
         Giant
       </span>
